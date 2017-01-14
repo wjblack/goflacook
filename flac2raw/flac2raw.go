@@ -1,6 +1,8 @@
 // Test programs to use the mewkiz FLAC decoder and the gordonklaus portaudio
 // library to convert/play FLAC files.
 
+// GoFlaCook is (C)2017 by BJ Black, released under WTFPL.  See COPYING.
+
 // flac2raw converts FLAC files to little-endian signed RAW sample files.
 package main
 
