@@ -1,0 +1,41 @@
+All Go source files are (C)2017 by BJ Black.  Licensed to this unsuspecting
+planet under the WTFPL (http://www.wtfpl.net).  Copied below:
+
+--cut here--
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+
+--cut here--
+
+
+
+
+All audio test files were downloaded from http://freesound.org under
+various open licenses.  Details as follows:
+
+test1.flac - 22457__jppi-stu__fire-alarm-testing - 48kHz 16-bit stereo
+Creative Commons Attribution - https://creativecommons.org/licenses/by/3.0/
+Johnny Pixel Productions, Inc. - http://www.johnny-pixel.com/
+
+test2.flac - 352973__cabled-mess__swoosh-test-a - 96kHz 24-bit stereo
+Creative Commons Zero - https://creativecommons.org/publicdomain/zero/1.0/
+User "cabled-mess": https://goo.gl/kgsxS4
+
+test3.flac - 83291__alienxxx__little-test-1-all - 44.1kHz 16-bit mono
+Creative Commons Attribution - https://creativecommons.org/licenses/by/3.0/
+User "AlienXXX": http://www.freesound.org/people/AlienXXX/
+
+Many thanks to the folks on freesound.org for making samples available to
+the world!
