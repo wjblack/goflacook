@@ -21,8 +21,6 @@ type Outputter struct {
 	Proc func(*flac.Stream, []int32) error
 	// Stream is the FLAC stream being played.
 	Stream *flac.Stream
-	// Buffer is a temporary buffer space (used by e.g. flacplay)
-	Buffer *[]int32
 	// interleaver specifies a function pointer to whichever sample
 	// integrator we're using.
 	interleaver func(*frame.Frame) []int32
@@ -30,7 +28,7 @@ type Outputter struct {
 
 // NewOutputter is a simple constructor for Outputter.
 func NewOutputter(proc func(*flac.Stream, []int32) error) *Outputter {
-	return &Outputter{ proc, nil, nil, nil }
+	return &Outputter{ proc, nil, nil }
 }
 
 // interleave8 assumes 8 bits per sample and integrates all channels into a
