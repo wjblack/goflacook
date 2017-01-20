@@ -14,7 +14,6 @@ import (
 	"os"
 )
 
-var output []int32
 var outstream *portaudio.Stream
 
 func main() {
@@ -36,7 +35,7 @@ func main() {
 
 // proc shoves samples out to the bufio writer.
 func proc(stream *flac.Stream, samples []int32) error {
-	output = samples
+	outputter.Buffer = &samples
 	err := outstream.Write()
 	return err
 }
@@ -58,7 +57,7 @@ func flacplay(outputter *goflacook.Outputter, filename string) {
 	portaudio.Initialize()
 	defer portaudio.Terminate()
 
-	stream, err := portaudio.OpenDefaultStream(0, int(channels), float64(rate), len(output), &output)
+	stream, err := portaudio.OpenDefaultStream(0, int(channels), float64(rate), len(*outputter.Buffer), outputter.Buffer)
 	chk("opening portaudio", err)
 	chk("starting stream", stream.Start())
 	outstream = stream
