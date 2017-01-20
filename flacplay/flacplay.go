@@ -28,7 +28,7 @@ func main() {
 
 	outputter := goflacook.NewOutputter(proc)
 
-	// Just run the flac2raw func for each pair of filenames
+	// Just run the flacplay func for each pair of filenames
 	for i:=1; i<len(os.Args); i++ {
 		flacplay(outputter, os.Args[i])
 	}
@@ -41,7 +41,7 @@ func proc(stream *flac.Stream, samples []int32) error {
 	return err
 }
 
-// flac2raw opens/decodes the FLACfile stated in infile and outputs RAW data
+// flacplay opens/decodes the FLACfile stated in infile and outputs RAW data
 // to outfile.  Panics on any error.
 func flacplay(outputter *goflacook.Outputter, filename string) {
 	// Let the peanut gallery know what's up.
