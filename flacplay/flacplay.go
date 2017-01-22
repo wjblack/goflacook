@@ -18,7 +18,7 @@ var output []int32
 var outstream *portaudio.Stream
 
 func main() {
-	// Make sure we are doing at least one conversion and that there are
+	// Make sure we are doing at least one play and that there are
 	// pairs of arguments (foo -> bar, baz -> bingo, etc)
 	if len(os.Args) < 2 {
 		fmt.Printf("Usage: %s <file> [file...]\n",
@@ -63,7 +63,7 @@ func flacplay(outputter *goflacook.Outputter, filename string) {
 	chk("starting stream", stream.Start())
 	outstream = stream
 
-	chk("converting sample", outputter.MainLoop())
+	chk("playing sample", outputter.MainLoop())
 }
 
 // chk dies with a formatted error if err is not nil.
