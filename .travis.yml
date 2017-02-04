@@ -1,6 +1,5 @@
 language: go
 
-addons:
-  apt:
-    packages:
-    - libportaudio-dev
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y portaudio19-dev
