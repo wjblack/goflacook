@@ -11,6 +11,11 @@ utility, along with a test program that verifies that decoding matches exactly
 the Xiph reference implementation (via precomputed MD5 hashes).
 
 
+Code Status
+-----------
+[![Build Status](https://travis-ci.org/wjblack/goflacook.svg?branch=master)](https://travis-ci.org/wjblack/goflacook)
+
+
 Installation
 ------------
 The easiest way is to just:
